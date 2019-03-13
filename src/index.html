@@ -5,13 +5,46 @@
     <title>ATROCITY Movies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="main.js"></script>
+    <script src="data.js"></script>
 </head>
 <body>
+  <main>
     <header id="header">
-        <button type="button" id="topClassicsButton">Top Classics</button>
-        <button type="button" id="topModernButton">Top Modern</button>
+      <img class="logo" alt="Atrocity_logo.png"
+      src="http://drive.google.com/uc?export=view&amp;id=1tphnAMPlE9aa0aotHIRJ7r_1S4B3Pv9B">
+      <button class="btn"><i class="fa fa-home"></i></button>
+         <button type="button" id="topClassicsBtn">Top Classics</button>
+         <button type="button" id="topModernBtn">Top Modern</button>
+         <input type="search" id="searchBar" name="q">
+         <button><i class="fas fa-search" id="searchBtn"></i></button>
     </header>
-    
-</body>
-</html>
+    <content>
+
+    <section class="generalScreen" id="welcomeScreen">
+       <p>
+         Bienvenida a Atrocity Movies, <br>el mejor buscador para películas de horror,
+         terror y suspenso. <br>👀 Procede con precaución...
+       </p>
+       <div class="movieCarrousel" id="welcomeCarrousel"></div>
+    </section>
+    <section class="generalScreen" id="movieDetailScreen"></section>
+    <section class="generalScreen" id="notFoundScreen">
+      <box>
+        <h2>('u.u)<h2>
+          <p>¡Esto es horrible!</p>
+          <p>La película que buscas<br>
+             no aparece en nuestra base de datos.<br>
+             Mientras trabajamos en arreglarlo,<br>
+            puedes consultar nuestras recomendaciones<br>
+             o hacer una nueva búsqueda.</p>
+      </box>
+    </section>
+    <section class="generalScreen" id="topClassicsScreen"></section>
+    <section class="generalScreen" id="topModernScreen"></section>
+    </content>
+  </main>
+ </body>
+ </html>
