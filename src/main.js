@@ -1,3 +1,39 @@
+const startingScreen =()=> {
+    
+    document.getElementById ("welcomeScreen").style.display="flex";
+    document.getElementById ("welcomeCarrousel").style.display="flex";
+    document.getElementById ("movieDetailScreen").style.display="none";
+    document.getElementById ("notFoundScreen").style.display="none";
+    document.getElementById ("topClassicsScreen").style.display="none";
+    document.getElementById ("topModernScreen").style.display="none";
+    };
+
+    document.getElementById ("homeBtn").addEventListener("click",startingScreen);
+
+const topClassicsMovies = ()=> {
+    document.getElementById ("topClassicsScreen").style.display="flex";
+    document.getElementById ("welcomeScreen").style.display="none";
+    document.getElementById ("welcomeCarrousel").style.display="none";
+    document.getElementById ("movieDetailScreen").style.display="none";
+    document.getElementById ("notFoundScreen").style.display="none";
+    document.getElementById ("topModernScreen").style.display="none";
+    document.getElementById ("searchBtn").style.display="none";
+    };   
+
+    document.getElementById ("topClassicsBtn").addEventListener("click", topClassicsMovies);
+    
+
+ const topModernMovies = ()=> {
+    document.getElementById ("topClassicsScreen").style.display="none";
+    document.getElementById ("welcomeScreen").style.display="none";
+    document.getElementById ("welcomeCarrousel").style.display="none";
+    document.getElementById ("movieDetailScreen").style.display="none";
+    document.getElementById ("notFoundScreen").style.display="none";
+    document.getElementById ("topModernScreen").style.display="flex";
+    document.getElementById ("searchBtn").style.display="none";
+ };   
+
+    document.getElementById ("topModernBtn").addEventListener("click", topModernMovies);
 
 const MOVIE_API_URL = "https://www.omdbapi.com/";
 
